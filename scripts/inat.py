@@ -12,6 +12,7 @@ def fetch_inat_girona():
         "nelng": 2.8912,
         "has[]": "geo",
         "per_page": 200,
+        "locale": "ca",
     }
 
     all_results = []
@@ -65,7 +66,8 @@ def to_geojson(observations, output_file="girona_inat.geojson"):
                     obs.get("taxon", {}).get("preferred_common_name")
                     if obs.get("taxon")
                     else None
-                )
+                ),
+                "author": obs.get("user")
             }
         }
 
