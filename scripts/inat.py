@@ -68,7 +68,9 @@ def to_geojson(observations, output_file="girona_inat.geojson"):
                     if obs.get("taxon")
                     else None
                 ),
-                "author": obs.get("user")
+                "author": obs.get("user"), 
+                "iconic_taxon_name": obs.get("iconic_taxon_name"), 
+                "iconic_taxon_id": obs.get("iconic_taxon_id"), 
             }
         }
 
