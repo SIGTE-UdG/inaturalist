@@ -54,6 +54,7 @@ def to_geojson(observations, output_file="girona_inat.geojson"):
                 "species_guess": obs.get("species_guess"),
                 "iconic_taxon_name": obs.get("iconic_taxon_name"), 
                 "observed_on": obs.get("observed_on"),
+                "place_guess": obs.get("place_guess"),
                 "num_identification_agreements": obs.get("num_identification_agreements"), 
                 "photos": obs.get("photos"), 
                 "url": obs.get("uri"),
