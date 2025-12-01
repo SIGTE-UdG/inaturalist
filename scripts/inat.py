@@ -72,6 +72,8 @@ def to_geojson(observations, output_file="girona_inat.geojson"):
                 "iconic_taxon_name": obs.get("iconic_taxon_name"), 
                 "iconic_taxon_id": obs.get("iconic_taxon_id"), 
                 "iconic_taxon": obs.get("iconic_taxon"),
+                "quality_grade": obs.get("quality_grade"),
+                "geoprivacy": obs.get("geoprivacy"),
             }
         }
 
